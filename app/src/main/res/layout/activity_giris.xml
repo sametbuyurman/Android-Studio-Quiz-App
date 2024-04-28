@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity"
+
+    >
+    <ImageView
+    android:id="@+id/imageView4"
+    android:layout_width="408dp"
+    android:layout_height="277dp"
+    android:layout_marginTop="70dp"
+    android:layout_marginBottom="1dp"
+    app:layout_constraintBottom_toTopOf="@+id/email_girs_edit"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.333"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/question" />
+
+    <EditText
+        android:id="@+id/email_girs_edit"
+        android:layout_width="298dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_email_icon"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/password_giris_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <EditText
+        android:id="@+id/password_giris_edit"
+        android:layout_width="303dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_lock_icon"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_girs_edit" />
+
+
+
+    <Button
+        android:id="@+id/girisyap_button"
+        android:layout_width="211dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="26dp"
+        android:background="@color/orange"
+        android:fontFamily="@font/alfa_slab_one"
+        android:gravity="center"
+        android:onClick="girisyap"
+        android:padding="16dp"
+        android:text="Giriş Yap"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_giris_edit"/>
+
+    <TextView
+        android:id="@+id/sifremiUnuttumTextView"
+        android:layout_width="134dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:onClick="sifremiUnuttum"
+        android:text="Şifremi Unuttum"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/girisyap_button"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

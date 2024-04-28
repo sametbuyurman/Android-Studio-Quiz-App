@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/email_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kayit_ol_background"
+    tools:context=".KayitActivity">
+
+    <EditText
+    android:id="@+id/username_text"
+    android:layout_width="298dp"
+    android:layout_height="53dp"
+    android:layout_marginTop="124dp"
+    android:background="@drawable/custom_input"
+    android:drawableStart="@drawable/custom_user_icon"
+    android:drawablePadding="12dp"
+    android:ems="10"
+    android:hint="Kullanıcı Adı"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp"
+    android:textSize="14sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.504"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/email_et5"
+        android:layout_width="298dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_email_icon"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/password_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_text" />
+
+
+    <EditText
+        android:id="@+id/password_text"
+        android:layout_width="298dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="54dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_lock_icon"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/password_text_tekrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/password_text_tekrar"
+        android:layout_width="298dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_lock_icon"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Şifre Tekrar"
+        android:inputType="textPassword"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/kayitol_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+    android:id="@+id/kayitol_button"
+    android:layout_width="216dp"
+    android:layout_height="69dp"
+    android:layout_marginBottom="118dp"
+    android:background="@color/orange"
+    android:fontFamily="@font/alfa_slab_one"
+    android:gravity="center"
+    android:onClick="kayitOl"
+    android:padding="16dp"
+    android:text="Kayıt Ol"
+    android:textAllCaps="false"
+    android:textColor="@color/white"
+    android:textSize="25sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

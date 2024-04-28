@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "826714864209",
+    "project_id": "genius-quiz-4c02c",
+    "storage_bucket": "genius-quiz-4c02c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826714864209:android:4ecea664fa44381286d670",
+        "android_client_info": {
+          "package_name": "com.mediol.bilgiuygulama"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDll7HUvT5oSI5Ogp_MfCuIuEyOCtrVNKQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
