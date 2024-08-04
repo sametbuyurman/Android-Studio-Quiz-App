@@ -28,7 +28,7 @@ public class KayitActivity extends AppCompatActivity {
 
     private EditText username_text, password_text, password_text_tekrar, email_text;
     private Button kayitol_button;
-    private String txtmail, txtpassword, txtusername,txtpasswordtekrar;
+    private String txtmail, txtpassword, txtusername, txtpasswordtekrar;
     private FirebaseAuth mAuth;
     private FirebaseUser mUser;
     private FirebaseFirestore mFirestore;
@@ -47,7 +47,6 @@ public class KayitActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         mFirestore = FirebaseFirestore.getInstance();
     }
-
 
 
     public void kayitOl(View view) {
@@ -131,67 +130,12 @@ public class KayitActivity extends AppCompatActivity {
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-    /*public void kayitOl(View view) {
-        txtusername = username_text.getText().toString();
-        txtmail = email_text.getText().toString();
-        txtpassword = password_text.getText().toString();
-        txtpasswordtekrar = password_text_tekrar.getText().toString();
-
-        if (password_text.getText().toString().equals(password_text_tekrar.getText().toString())) {
-            if (!TextUtils.isEmpty(txtusername) && !TextUtils.isEmpty(txtmail) && !TextUtils.isEmpty(txtpassword)) {
-                mAuth.createUserWithEmailAndPassword(txtmail, txtpassword)
-                        .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                if (task.isSuccessful()) {
-                                    mUser = mAuth.getCurrentUser();
-
-                                    if (mUser != null) {
-                                        HashMap<String, Object> mData = new HashMap<>();
-                                        mData.put("kullaniciAdi", txtusername);
-                                        mData.put("kullaniciEmail", txtmail);
-                                        mData.put("kullaniciSifre", txtpassword);
-                                        mData.put("kullaniciId", mUser.getUid());
-
-                                        mFirestore.collection("Kullanıcılar").document(mUser.getUid())
-                                                .set(mData)
-                                                .addOnCompleteListener(new OnCompleteListener<Void>() {
-                                                    @Override
-                                                    public void onComplete(@NonNull Task<Void> task) {
-                                                        if (task.isSuccessful()) {
-                                                            Toast.makeText(KayitActivity.this, "Kayıt İşlemi Başarılı", Toast.LENGTH_SHORT).show();
-                                                            Intent intent = new Intent(KayitActivity.this, MainActivity.class);
-                                                            startActivity(intent);
-                                                            finish();
-                                                        } else {
-                                                            Toast.makeText(KayitActivity.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-                                                        }
-                                                    }
-                                                });
-                                    }
-                                } else {
-                                    Toast.makeText(KayitActivity.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-                                }
-                            }
-                        });
-
-            } else {
-                Toast.makeText(KayitActivity.this, "Lütfen tüm alanları doldurun", Toast.LENGTH_SHORT).show();
-            }
-
-        } else {
-            Toast.makeText(KayitActivity.this, "Girilen Şifreler Farklı", Toast.LENGTH_SHORT).show();
-        }
-    }*/
 }
+
+
+
+
+
+
+
+

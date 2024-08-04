@@ -8,19 +8,21 @@
     tools:context=".MainActivity"
 
     >
+
+
     <TextView
-    android:id="@+id/textView"
-    android:layout_width="232dp"
-    android:layout_height="49dp"
-    android:layout_marginTop="19dp"
-    android:fontFamily="@font/alfa_slab_one"
-    android:text="Genius Quiz"
-    android:textAlignment="center"
-    android:textColor="#FF0303"
-    android:textSize="30sp"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/textView"
+        android:layout_width="232dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="19dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Quiz App"
+        android:textAlignment="center"
+        android:textColor="#FF0303"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
     android:id="@+id/imageView5"

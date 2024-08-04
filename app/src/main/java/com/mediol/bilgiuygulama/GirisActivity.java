@@ -47,7 +47,7 @@ public class GirisActivity extends AppCompatActivity {
                         @Override
                         public void onSuccess(AuthResult authResult) {
                             mUser = mAuth.getCurrentUser();
-                            Intent intent = new Intent(GirisActivity.this,TestActivity.class);
+                            Intent intent = new Intent(GirisActivity.this,ListActivity.class);
                             startActivity(intent);
                             finish();
 

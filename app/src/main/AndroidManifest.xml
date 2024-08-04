@@ -15,10 +15,22 @@
         android:theme="@style/Theme.BilgiUygulama"
         tools:targetApi="31">
         <activity
-            android:name=".SifreSifirlama"
+            android:name=".SonucActivity"
             android:exported="false" />
         <activity
-            android:name=".TestActivity"
+            android:name=".QuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SifreSifirlama"
             android:exported="false" />
         <activity
             android:name=".GirisActivity"
